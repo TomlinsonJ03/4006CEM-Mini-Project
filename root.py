@@ -42,11 +42,11 @@ def EnterBasement():
     BadEnding=Button(root, text="Be Mean", width=12, 
                     height=4, borderwidth=2, relief="solid", 
                     background="#F1F1F1",command=BaseBadEnding)
-    BadEnding.grid(column=4, row=4,)
+    BadEnding.grid(column=4, row=4)
 
 def BaseGoodEnding():
     BseGoodEnding=Label(root, text=BaseTextGood)
-    BseGoodEnding.grid(row=5, column=3,columnspan=4)
+    BseGoodEnding.grid(row=5, column=2,columnspan=4)
 
 def BaseBadEnding():
     BseBadEnding=Label(root, text=BaseTextBad)
@@ -61,12 +61,12 @@ def Kitchen():
     KitchenText.grid(row=3, column=2,
                      columnspan=4)
 
-    GoodEndingKitchen=Button(root, text = "Be nice", command=KitchenText,
+    GoodEndingKitchen=Button(root, text = "Be nice", command=KitchenGoodEnding,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#E8DCD0")
     GoodEndingKitchen.grid(row=4 ,column= 3,)
 
-    BadEndingKitchen=Button(root, text = "Be mean", command=KitchenText,
+    BadEndingKitchen=Button(root, text = "Be mean", command=KitchenBadEnding,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#E8DCD0")
     BadEndingKitchen.grid(row=4, column= 4)
@@ -77,7 +77,8 @@ def KitchenGoodEnding():
     KichGoodEnding.grid(row=5, column=3,columnspan=4)
 
 def KitchenBadEnding():
-    pass
+    Kitchentext.grid_forget()
+
 
 
 def lounge():
@@ -87,51 +88,75 @@ def lounge():
     GoodEndingKitchen=Button(root, text = "Be nice", command=LoungeText,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#D4C0AB")
-    GoodEndingKitchen.grid(row=3, column= 4)
+    GoodEndingKitchen.grid(row=4, column= 3)
 
     BadEndingKitchen=Button(root, text = "Be mean", command=LoungeText,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#D4C0AB")
     BadEndingKitchen.grid(row=4, column= 4)
 
-def Nursery():
-    NurseryText=Label(root, text=Loungetext)
-    NurseryText.grid(row=3, column=2, columnspan=4)
 
-    GoodEndingNursery=Button(root, text = "Be nice", command=NurseryText,
+def LoungeBDEnding():
+    pass
+
+def LoungeGDEnding():
+    pass
+
+
+def Nursery():
+    NurseryText=Label(root, text=NurseryStory)
+    NurseryText.grid(row=3, column=2, columnspan=4,rowspan=2)
+
+    GoodEndingNursery=Button(root, text = "Be nice", command=NurseryGDEnding,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#C19E77")
-    GoodEndingNursery.grid(row=3, column= 4)
+    GoodEndingNursery.grid(row=5, column= 3)
 
-    BadEndingNursery=Button(root, text = "Be mean", command=NurseryText,
+    BadEndingNursery=Button(root, text = "Be mean", command=NurseryBDEnding,
                              width=12, height=4, borderwidth=2, relief="solid",
-                             background="#C1977")
-    BadEndingNursery.grid(row=4, column= 4)
+                             background="#C19E77")
+    BadEndingNursery.grid(row=5, column= 4)
+
+def NurseryGDEnding():
+    NrsGoodEnding=Label(root, text=NurseryGoodEnding)
+    NrsGoodEnding.grid(row=5, column=3,columnspan=4)
+
+def NurseryBDEnding():
+    NrsBadEnding=Label(root, text=NurseryBadEnding)
+    NrsBadEnding.grid(row=5, column=3,columnspan=4)
+
 
 def Office():
-    OfficeText=Label(root, text=Loungetext)
+    OfficeText=Label(root, text=OfficeStory)
     OfficeText.grid(row=3, column=2, columnspan=4)
 
-    GoodEndingOffice=Button(root, text = "Be nice", command=OfficeText,
+    GoodEndingOffice=Button(root, text = "Be nice", command=OfficeGoodEnding,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#91683C")
-    GoodEndingOffice.grid(row=3, column= 4)
+    GoodEndingOffice.grid(row=4, column= 3)
 
-    BadEndingOffice=Button(root, text = "Be mean", command=OfficeText,
+    BadEndingOffice=Button(root, text = "Be mean", command=OfficeBadEnding,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#91683C")
     BadEndingOffice.grid(row=4, column= 4)
+def OfficeGoodEnding():
+    OffGoodEnding=Label(root, text=OfficeTextGood)
+    OffGoodEnding.grid(row=5, column=2,columnspan=4)
+
+def OfficeBadEnding():
+    OffBadEnding=Label(root, text=OfficeTextBad)
+    OffBadEnding.grid(row=5, column=3,columnspan=4)
+    
 
 
-
-
-
+   
 
 
 #Button Calling
 
+ 
 OfficeButton=Button(root, text="Office",
-                    command= OfficeText, width=12,
+                    command= Office, width=12,
                     height=4, borderwidth=2, relief="solid",
                     background="#91683C")
 OfficeButton.grid(column=0, row=7,columnspan=1, pady=5)

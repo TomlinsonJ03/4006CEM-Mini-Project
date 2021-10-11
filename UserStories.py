@@ -31,10 +31,12 @@ BaseText =(""" I will walk into the basement, there seems to be a robot there, w
         """)
 
 
-BaseTextGood = ("""I ponder the overall necessity for the robot and weight in the possible consequences that could unravel if it was no longer active. 
-       None surpassed a high enough level of degree to garner concern, I lay my finger upon a circular button illuminated by a warm white 
-       led, I press it and enjoy a moment of silence as its internal components hum until still. I then unplug the robot and take the power 
-       cord with me in hope of the robot never being activated again.""")
+BaseTextGood = ("""I ponder the overall necessity for the robot and weight in the possible consequences
+       that could unravel if it was no longer active. None surpassed a high enough level of degree to 
+       garner concern, I lay my finger upon a circular button illuminated by a warm white 
+       led, I press it and enjoy a moment of silence as its internal components hum until still. 
+       I then unplug the robot and take the power cord with me in hope of the robot never being 
+       activated again.""")
 
 BaseTextBad = ("""I notice the robot in despair and locate the unorganized box of components and
          stripped wires, I turn of the robot and begin swapping out parts, refitting incorrect 
@@ -93,15 +95,84 @@ Kitchentext=("""
 KitchenTextGood=("""
 
 
-
-
 """)
 
+Loungetext=("""You walk into a large, well decorated, lounge. Sitting on the sofa you can see a robot.
+        Once it spots you it slugishly stands up and greets you:
+        - Hello There.
+        It seems to be made out of some sort of white and black plastic, but the paint is chipped
+        revealing a grey undertone to the monotone robot. Presumably it is an older model, the friction 
+        of unoiled metal can be heard as the robot moves, it movements seem slow and innacurate while 
+        several parts of plastic are damaged and the screen positioned in the robots chest is cracked.
+        - You must be Mr. Williams, welcome! The boss is expecting you.""")
 
 
+OfficeStory=(""" I will walk into the office, there seems to be a robot there, working hard it seems.
+        They don’t see the things the way I do, it exclaimed. I wander what it means, see what? Maybe
+        I will approach it and find out. It seems to be working on some kind of budgeting, the finances
+        of the family perhaps. However, it is scribbling the words free will, programming. Perhaps the
+        robot’s have some sort of sentience, Maybe the robot in the garden has a passion for that sort of
+        thing, maybe robots love to cook. But then again, this one doesn’t seem to love what it’s doing, 
+        more like, it knows that it’s simply a slave who isn’t allowed to do as it pleases. Maybe it 
+        ignored me because it hopes that I will make a choice, will I save the robot or leave it be. No 
+        Surely not, a robot has no free thought, it’s just an AI with programming, no-one would program
+        a robot to hate what it is doing, do they have such emotions? How do you make it so a robot can 
+        experience such things, would it be considered real if so? I suppose I must make a choice. """)
+
+OfficeTextGood=(""" I will approach the robot. “what do you mean by free will? is that what you are looking
+        for? do you know what that is?”. The robot is ignoring me, and it is continuing to write. It is 
+        performing some calculations, faster then last time. I guess I am agitating the robot I’ll step away. 
+        Maybe they don’t have sentience, that would be weird, who would program that. I guess I should leave
+        it alone, robots are robots, that’s all they will ever be. """)
+
+OfficeTextBad=(""" I’ll shout to the robot, “Hey you! Come with me! You want to escape right?”. The robot
+        stops what it is doing and looks over at me. Then continues writing again, scribbling “free, free”.
+        I guess I was right. How would I plan to escape, there is an open window I could throw him out or 
+        try to leave through the front door with it, no one would care about a robot right? After all they 
+        could buy another one. I will walk out with the robot, the drop could damage this potentially 
+        sentient robot, and it would be difficult to fix. I’ll head to the front door of the house and try 
+        to not make eye contact with any robot or human, acting like I am supposed to be there. Now I have 
+        a responsibility, I see the potential in this robot. Maybe one day I will help robots gain rights, 
+        a new life form.""")
 
 
-Loungetext=(""" """)
+NurseryStory=(""" And then I, the stranger and in this case – a really well know theft, saw him:
+this big, in form of a square, metallic and crusty orange robot. He is the second AI of the house …
+“I am aware that I am eccentric. I am aware that I am always over the top. 
+I am aware that I am too sassy for the other 4 AI robots.” the robot said. “But that’s me – 
+the babysitter & teacher of this big, luxurious house.” “Oh wow” I replied. “You really seem to be 
+so happy about things around you. Are you always this cheerful about things surrounding you?” 
+The AI replied: “It’s such a pity that I can’t feel anything; that I don’t have emotions … Because if
+ I was asked my opinion on the humankind, I would have never ended talking and complaining.
+“Let me hear it” I exclaimed.  “I’ll tell you”, the AI replied, “how I feel about this buffoonery:
+As a babysitter, every single one of the AI robots and family members of this house underestimates
+ my abilities. I don’t think that they even know how HARD it is for me to change diapers, to stop 
+ babies from crying all day, or to clean the room after these little hedgehogs play in the living 
+ room. UHHH … And the most frustrating part is that it’s the second time this week when the mother 
+ of these babies forgot to put milk in my reservoir … How am I supposed to breastfeed the babies?!?!”
+I was getting on my nerves. I really am not able to stand this AI … I have to take a decision: """)
 
 
-OfficeText=(""" """)
+NurseryGoodEnding=("""And please, don’t even get me started on the fact that I’m the teacher of this 
+        penthouse.” said the AI while walking towards the kids’ room. I was following him. “The other
+        day, Moji, the intelligent AI, told me that babies are too young to learn about binary … 
+        01010111 01101000 01100001 01110100 00100000 01110100 01101000 01100101 00100000 01000110 
+        00100011 01000011 01001011!!!! See what I did there? … Do you know binary? Of course not. You 
+        won’t know what I wrote here because you didn’t learn binary as a kid. I for sure know that if
+        they learned Python from the age of 2, they wouldn’t have issues at Uni as some of the students 
+        have nowadays …” Luckily for me, the robot runs out of energy. The AI needs to be charged. In 
+        that time, I quickly leave the AI alone, go in the secret chamber and get all the money. After 
+        that, without anyone noticing, I plug the AI to the charging spot and walk away with all the cash.
+""")
+
+NurseryBadEnding=(""" “Oh, my lord!” I exclaimed. “Can you shut your f-ing mouth already?” “Aghhhh … Do you 
+        kiss your mother with those lips?” says the AI intrigued, as he was thinking that I am his friend.
+        “Lemme hack you … once and for ALL!!! I just cannot stand you anymore!” I speak.
+        I try to disconnect the AI from the network, but fail miserably. Upcoming, I try to hit his motherboard.
+        This process fails as well, as the robot moves away quickly from me. One of the kids wakes up and approaches
+        the fight. By that time, I somehow recognise his face and remember that I have seen him in a documentary
+        about famous, already filthy rich babies. I then remember where the kids’ room is and run in that direction,
+        as the room leads to the secret chamber where all the money is."NOT ON MY WATCH!” the AI yells. “Activating 
+        self-destruct sequence!” Then the AI produces a small bomb. The kid runs fast enough to his room to save
+        himself, but I don’t have this time. I, along the second AI -the hero of this story, die in this little
+        room. The robot speaks up his last words: “Looks like another victory, just a little longer!”. """)
