@@ -131,4 +131,5 @@ dmypy.json
 
 
 # RANDOM ACCESS CODE FOR TESTING PURPOSES 
-RAC/  
+RAC.py  
+map.py

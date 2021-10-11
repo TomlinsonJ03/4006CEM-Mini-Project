@@ -22,18 +22,18 @@ options = {
     # //////////////////// LAYER 2 ////////////////////
 
     'Lounge': {
-        'xStart': 0.115,
+        'xStart': 0.110,
         'yStart': 0.15,
-        'xEnd': 0.165,
+        'xEnd': 0.170,
         'yEnd': 0.2,
         'activated': False,
         'ending': False,
         'children': ['Truth', 'Lie']
     },
     'Basement': {
-        'xStart': 0.292,
+        'xStart': 0.287,
         'yStart': 0.15,
-        'xEnd': 0.348,
+        'xEnd': 0.363,
         'yEnd': 0.2,
         'activated': False,
         'ending': False,
@@ -49,18 +49,18 @@ options = {
         'children': ['Steal', 'Talk']
     },
     'Kitchen': {
-        'xStart': 0.655,
+        'xStart': 0.650,
         'yStart': 0.15,
-        'xEnd': 0.705,
+        'xEnd': 0.710,
         'yEnd': 0.2,
         'activated': False,
         'ending': False,
         'children': ['Escape', 'Fight']
     },
     'Nursery': {
-        'xStart': 0.835,
+        'xStart': 0.830,
         'yStart': 0.15,
-        'xEnd': 0.885,
+        'xEnd': 0.890,
         'yEnd': 0.2,
         'activated': False,
         'ending': False,
@@ -76,7 +76,7 @@ options = {
         'yEnd': 0.3,
         'activated': False,
         'ending': False,
-        'children': ['Coffe', 'No Coffe']
+        'children': ['Coffee', 'No Coffee']
     },
     'Lie': {
         'xStart': 0.165,
@@ -97,9 +97,9 @@ options = {
         'children': [None]
     },
     "Don't help": {
-        'xStart': 0.342,
+        'xStart': 0.330,
         'yStart': 0.25,
-        'xEnd': 0.398,
+        'xEnd': 0.410,
         'yEnd': 0.3,
         'activated': False,
         'ending': True,
@@ -124,9 +124,9 @@ options = {
         'children': [None]
     },
     'Escape': {
-        'xStart': 0.605,
+        'xStart': 0.602,
         'yStart': 0.25,
-        'xEnd': 0.655,
+        'xEnd': 0.658,
         'yEnd': 0.3,
         'activated': False,
         'ending': True,
@@ -162,7 +162,7 @@ options = {
 
     # //////////////////// LAYER 4 ////////////////////
 
-    'Coffe': {
+    'Coffee': {
         'xStart': 0.015,
         'yStart': 0.35,
         'xEnd': 0.065,
@@ -171,10 +171,10 @@ options = {
         'ending': False,
         'children': ['Chat', "Don't chat"]
     },
-    'No Coffe': {
-        'xStart': 0.115,
+    'No Coffee': {
+        'xStart': 0.100,
         'yStart': 0.35,
-        'xEnd': 0.165,
+        'xEnd': 0.170,
         'yEnd': 0.4,
         'activated': False,
         'ending': False,
@@ -193,9 +193,9 @@ options = {
         'children': ['Reasons']
     },
     "Don't chat": {
-        'xStart': 0.112,
+        'xStart': 0.100,
         'yStart': 0.45,
-        'xEnd': 0.168,
+        'xEnd': 0.180,
         'yEnd': 0.5,
         'activated': False,
         'ending': False,
@@ -205,9 +205,9 @@ options = {
     # //////////////////// LAYER 6 ////////////////////
 
     'Reasons': {
-        'xStart': 0.065,
+        'xStart': 0.060,
         'yStart': 0.55,
-        'xEnd': 0.115,
+        'xEnd': 0.120,
         'yEnd': 0.6,
         'activated': False,
         'ending': False,
@@ -229,9 +229,9 @@ options = {
     # //////////////////// LAYER 8 ////////////////////
 
     'Window': {
-        'xStart': 0.065,
+        'xStart': 0.060,
         'yStart': 0.75,
-        'xEnd': 0.115,
+        'xEnd': 0.120,
         'yEnd': 0.8,
         'activated': False,
         'ending': False,
@@ -268,9 +268,9 @@ options = {
         'children': [None]
     },
     'Struggle': {
-        'xStart': 0.195,
+        'xStart': 0.190,
         'yStart': 0.85,
-        'xEnd': 0.245,
+        'xEnd': 0.250,
         'yEnd': 0.9,
         'activated': False,
         'ending': True,

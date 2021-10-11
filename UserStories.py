@@ -181,9 +181,32 @@ Talk=( """Excelent. You know there has been something on my mind recently.
         You stare confused at the robot, trying to figure out what it just said or rather
         why it said it.""")
 
-
-
-
+Talk2=( """Too bad, I'm gonna talk anyway.
+        - I’ve always found it weird how I always get yelled at. Sure, I 
+        sometimes spill the coffee or bring the wrong report or misunderstand
+        orders and requests, but it’s not like I can do anything about it. My 
+        visual sensors have long since gotten dusty and blur my vision and my 
+        mechanical limbs need to be oiled and repaired. Despite this, my owner
+        doesn’t send me to get fixed yet when I make mistakes it’s still my fault.
+        Whenever I get punished I think about his previous assistant, back when 
+        most of the servants were still human. She was clumsy, lazy, and awkward,
+        but he would never hit her when she dropped the coffee and would only
+        occasionally yell at her. Maybe that’s why I replaced her because he
+        likes hitting things and he couldn’t hit her. I just wish that my makers
+        had given me a way to show pain or discomfort as they did to the newer 
+        robots. Then, I would at least get hit less often. I think about my makers
+        sometimes, or rather I think about why they created me like this. Apparently, 
+        I was supposed to be able to learn and get a better understanding of the world
+        around me. I do not know whose fault it is, but I do not feel as though I am 
+        not learning much. I see people act in all different ways, but rarely in a way 
+        that seems rational and intelligent. Either the intelligence that was given to 
+        me is not enough to understand human intelligence or what drives humans isn’t
+        intelligence at all. I am incapable of understanding emotion, so a logical
+        conclusion would be that the actions of humans which I do not understand are 
+        caused by this unfamiliar force. That does make me think if it is emotion that
+        drives humans and not intelligence then why are we the ones called artificial? 
+        You stare confused at the robot, trying to figure out what it just said or rather
+        why it said it.""")
 
 Explaination=("""- I felt like it was the right time. I might never get another chance 
         to say this and I haven't told anybody yet. I know why you are here, just like the last
@@ -198,6 +221,8 @@ Fighting=("""As the robots arm swings toward you, you manage to catch it and are
         from stabbing you. You are blocking with all you might, but the robot still seems to
         be overpowering you. """)
 
+Running=("""You jump up from you chair and run for the exit of the office, but the robot cuts you off. """)
+
 Struggle=("""You push against the robot as hard as you can, but he still seems to be slightly 
         stronger. You put in one last effort as you hear the robot start to crack.
         As you divert the arm away from you you hear something snap and the arms with the knife 
@@ -206,10 +231,36 @@ Struggle=("""You push against the robot as hard as you can, but he still seems t
         it from chasing after you. You succesfully escape.
 
         The End.""")
+runForWindow=("""You run to the open window. The robot chases after you, it is right on your tail. 
+        Out of the window is a drop into the garden, but the building seems scalable.""")
 
+takeKnife=("""You attempt grab the knife from the robots hand. You grab it with your hand, 
+        which cuts it, but, filled with adrenalin, you manage to wrestle it out of the robots hand. 
+        You now have the knife and the robot starts trying to punch you. 
+        You attempt to stab the robot, but you cannot penetrate it's metal and you only leave 
+        straches on the plastic. The struggle continues for a while until the robot eventually overpowers 
+        you. You recieve a blow to the head and fall to the ground. The last thing you see is the robot 
+        picking up the knife again and comming towards you.
 
+        The End.""")
 
+jumpForBush=("""You leap out of the window. You land into the bushes, which softens you fall. 
+        One of your legs is still quite hurt, maybe broken. 
+        You somehow make it out of the garden before the robot cathces up to you. 
+        You eventually find help outside the house.
+        
+        The End.""")
 
+scaleHouse=("""As you try to descend the building the robot catches up to you. 
+        He slashes at you and cuts your hand. You try to hold on, but the cut is too deep. 
+        Your hand goes numb and you plummet, falling on to the hard ground. 
+        You are only able to slowly crawl and as you try to make your way to the exit the robot 
+        catches up to you and finishes the job.
+
+        The End.""")
+
+runForWindow=("""You run to the open window. The robot chases after you, it is right on your tail. 
+        Out of the window is a drop into the garden, but the building seems scalable.""")
 
 OfficeStory=(""" I will walk into the office, there seems to be a robot there, working hard it seems.
         They don’t see the things the way I do, it exclaimed. I wander what it means, see what? Maybe
@@ -241,20 +292,20 @@ OfficeTextBad=(""" I’ll shout to the robot, “Hey you! Come with me! You want
 
 
 NurseryStory=(""" And then I, the stranger and in this case – a really well know theft, saw him:
-this big, in form of a square, metallic and crusty orange robot. He is the second AI of the house …
-“I am aware that I am eccentric. I am aware that I am always over the top. 
-I am aware that I am too sassy for the other 4 AI robots.” the robot said. “But that’s me – 
-the babysitter & teacher of this big, luxurious house.” “Oh wow” I replied. “You really seem to be 
-so happy about things around you. Are you always this cheerful about things surrounding you?” 
-The AI replied: “It’s such a pity that I can’t feel anything; that I don’t have emotions … Because if
- I was asked my opinion on the humankind, I would have never ended talking and complaining.
-“Let me hear it” I exclaimed.  “I’ll tell you”, the AI replied, “how I feel about this buffoonery:
-As a babysitter, every single one of the AI robots and family members of this house underestimates
- my abilities. I don’t think that they even know how HARD it is for me to change diapers, to stop 
- babies from crying all day, or to clean the room after these little hedgehogs play in the living 
- room. UHHH … And the most frustrating part is that it’s the second time this week when the mother 
- of these babies forgot to put milk in my reservoir … How am I supposed to breastfeed the babies?!?!”
-I was getting on my nerves. I really am not able to stand this AI … I have to take a decision: """)
+        this big, in form of a square, metallic and crusty orange robot. He is the second AI of the house …
+        “I am aware that I am eccentric. I am aware that I am always over the top. 
+        I am aware that I am too sassy for the other 4 AI robots.” the robot said. “But that’s me – 
+        the babysitter & teacher of this big, luxurious house.” “Oh wow” I replied. “You really seem to be 
+        so happy about things around you. Are you always this cheerful about things surrounding you?” 
+        The AI replied: “It’s such a pity that I can’t feel anything; that I don’t have emotions … Because if
+        I was asked my opinion on the humankind, I would have never ended talking and complaining.
+        “Let me hear it” I exclaimed.  “I’ll tell you”, the AI replied, “how I feel about this buffoonery:
+        As a babysitter, every single one of the AI robots and family members of this house underestimates
+        my abilities. I don’t think that they even know how HARD it is for me to change diapers, to stop 
+        babies from crying all day, or to clean the room after these little hedgehogs play in the living 
+        room. UHHH … And the most frustrating part is that it’s the second time this week when the mother 
+        of these babies forgot to put milk in my reservoir … How am I supposed to breastfeed the babies?!?!”
+        I was getting on my nerves. I really am not able to stand this AI … I have to take a decision: """)
 
 
 NurseryGoodEnding=("""And please, don’t even get me started on the fact that I’m the teacher of this 
@@ -272,11 +323,12 @@ NurseryGoodEnding=("""And please, don’t even get me started on the fact that I
 NurseryBadEnding=(""" “Oh, my lord!” I exclaimed. “Can you shut your f-ing mouth already?” “Aghhhh … Do you 
         kiss your mother with those lips?” says the AI intrigued, as he was thinking that I am his friend.
         “Lemme hack you … once and for ALL!!! I just cannot stand you anymore!” I speak.
-        I try to disconnect the AI from the network, but fail miserably. Upcoming, I try to hit his motherboard.
-        This process fails as well, as the robot moves away quickly from me. One of the kids wakes up and approaches
-        the fight. By that time, I somehow recognise his face and remember that I have seen him in a documentary
-        about famous, already filthy rich babies. I then remember where the kids’ room is and run in that direction,
-        as the room leads to the secret chamber where all the money is."NOT ON MY WATCH!” the AI yells. “Activating 
-        self-destruct sequence!” Then the AI produces a small bomb. The kid runs fast enough to his room to save
+        I try to disconnect the AI from the network, but fail miserably. Upcoming, 
+        I try to hit his motherboard.This process fails as well, as the robot moves away quickly from me. 
+        One of the kids wakes up and approaches the fight. By that time, I somehow recognise his face and 
+        remember that I have seen him in a documentary about famous, already filthy rich babies. 
+        I then remember where the kids’ room is and run in that direction, as the room leads to the 
+        secret chamber where all the money is."NOT ON MY WATCH!” the AI yells. “Activating self-destruct 
+        sequence!” Then the AI produces a small bomb. The kid runs fast enough to his room to save
         himself, but I don’t have this time. I, along the second AI -the hero of this story, die in this little
         room. The robot speaks up his last words: “Looks like another victory, just a little longer!”. """)
