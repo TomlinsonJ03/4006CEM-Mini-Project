@@ -58,28 +58,63 @@ def BaseBadEnding():
 
  
 def Kitchen():
-
-    KitchenText=Label(root, text= Kitchentext)
+    global KitchenText
+    KitchenText=Label(root, text= Kitchentextpt1)
     KitchenText.grid(row=3, column=2,
                      columnspan=4)
-
-    GoodEndingKitchen=Button(root, text = "Be nice", command=KitchenGoodEnding,
+    global Part2
+    Part2=Button(root, text = "Next", command=KitchenPart2,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#E8DCD0")
-    GoodEndingKitchen.grid(row=4 ,column= 3,)
+    Part2.grid(row=4 ,column= 3,)
 
-    BadEndingKitchen=Button(root, text = "Be mean", command=KitchenBadEnding,
+
+def KitchenPart2():
+    KitchenText.grid_forget()
+    Part2.grid_forget()
+
+    global KitchenTextPt2
+    global Part3
+    KitchenTextPt2=Label(root, text=Kitchentextpt2)
+    KitchenTextPt2.grid(row=3, column=2)
+
+    Part3=Button(root, text = "Next", command=KitchenPart3,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#E8DCD0")
-    BadEndingKitchen.grid(row=4, column= 4)
+    Part3.grid(row=5 ,column= 3,rowspan=4)
 
-9
-def KitchenGoodEnding():
-    KichGoodEnding=Label(root, text=BaseTextGood)
-    KichGoodEnding.grid(row=5, column=3,columnspan=4)
 
-def KitchenBadEnding():
-    pass
+def KitchenPart3():
+    KitchenTextPt2.grid_forget()
+    Part3.grid_forget()
+
+    KitchenTextPt3=Label(root, text=Kitchentextpt3)
+    KitchenTextPt3.grid(row=3, column=2)
+
+    
+    EscapeButton=Button(root, text="Escape", command=Escaperobot, 
+                            width=12, height=4, borderwidth=2, relief="solid",
+                            background="#E8DCD0")
+
+    EscapeButton.grid(row=5, column=2)
+
+    FightButton=Button(root, text="Fight", command=Fightrobot, 
+                            width=12, height=4, borderwidth=2, relief="solid",
+                            background="#E8DCD0")
+
+    FightButton.grid(row=5, column=3)
+
+def Escaperobot():
+    KitchenTextPt3=Label(root, text=EscapeRobot) 
+    KitchenTextPt3.grid(row=6, column=2)
+
+def Fightrobot():
+
+    fightRobot=Label(root, text=FightRobot)
+    fightRobot.grid(row=6, column=2)
+
+
+
 
 
 
@@ -98,18 +133,20 @@ def lounge():
     BadEndingLounge=Button(root, text = "No, That isn't me", command=NoThatIsNotMe,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#D4C0AB")
-    BadEndingLounge.grid(row=4, column= 4)
+    BadEndingLounge.grid(row=4, column= 3)
 
-def CoffeeYes():
-    global AgreeToCoffee
-    AgreeToCoffee=Label(root, text=coffee)
-    AgreeToCoffee.grid(row=2, column=3) 
 
 def CoffeeNo():
     global DeclineCoffee
-    DeclineCoffee=Label(root, text=NoCoffee)
-    DeclineCoffee.grid(row=3, column=4)
 
+    DeclineCoffee=Label(root, text=NoCoffee)
+    DeclineCoffee.grid(row=7, column=2,columnspan=5)
+
+    ChatButton=Button(root, text="Chat", command=BeginChat,
+                            width=12, height=4, borderwidth=2, relief="solid",
+                            background="#D4C0AB")
+    ChatButton.grid(row=8, column=2)
+    
 
 def YesThatIsMe():
     global PositiveAnswer
@@ -117,11 +154,32 @@ def YesThatIsMe():
     PositiveAnswer.grid(row=5, column=2,columnspan=4)
 
     global CoffeeButton
+    global DeclineCoffeeButton
+
     CoffeeButton=Button(root,text="Yes, please", command=CoffeeYes,
                             width=12, height=4, borderwidth=2, relief="solid",
                             background="#D4C0AB")
 
     CoffeeButton.grid(row=6, column=2)
+
+    DeclineCoffeeButton=Button(root, text="No, Thanks",command= CoffeeNo,
+                            width=12, height=4, borderwidth=2, relief="solid",
+                            background="#D4C0AB")
+    DeclineCoffeeButton.grid(row =6, column=3)
+
+
+def CoffeeYes():
+    global AcceptCoffee
+    global ChatButton
+    
+    AcceptCoffee=Label(root, text=coffee)
+    AcceptCoffee.grid(row=7, column=2,columnspan=4) 
+
+    ChatButton=Button(root, text="Chat", command=BeginChat,
+                            width=12, height=4, borderwidth=2, relief="solid",
+                            background="#D4C0AB")
+    ChatButton.grid(row=8, column=2)
+
 
 
 
@@ -129,11 +187,10 @@ def NoThatIsNotMe():
     global NegativeAnswer
     NegativeAnswer=Label(root, text=NoThatIsntMe)
     NegativeAnswer.grid(row=5, column=3,columnspan=4)
-    pass
-
-def delete():
-    chat.grid_forget()
     
+
+
+
 
 def BeginChat():
     LoungeText.grid_forget()
@@ -143,6 +200,9 @@ def BeginChat():
     CoffeeButton.grid_forget()
     AcceptCoffee.grid_forget()
     ChatButton.grid_forget()
+    DeclineCoffee.grid_forget()
+    DeclineCoffeeButton.grid_forget()
+
     global chat 
     global QuestionButton
     chat = Label(root, text=Talk)
@@ -171,77 +231,17 @@ def Fight():
     fight=Label(root, text = Fighting)
     fight.grid(row=5,column=2)
 
+    FightButton=Button(root, text="Struggle"
+                    ,width=12, height=4, borderwidth=2, relief="solid",
+                    background="#D4C0AB",
+                    command=struggle)
+    FightButton.grid(row =6, column=2)
 
 
 
-def CoffeeYes():
-    global AcceptCoffee
-    global ChatButton
-    AcceptCoffee=Label(root, text=coffee)
-    AcceptCoffee.grid(row=7, column=2,columnspan=4) 
-
-    ChatButton=Button(root, text="Chat", command=BeginChat,
-                            width=12, height=4, borderwidth=2, relief="solid",
-                            background="#D4C0AB")
-    ChatButton.grid(row=8, column=2)
-
-
-
-    
-
-
-def CoffeeNo():
-    pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def struggle():
+    struggling=Label(root, text=Struggle)
+    struggling.grid(row=7, column=2)
 
 
 

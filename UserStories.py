@@ -2,6 +2,7 @@ import tkinter as Tk
 from tkinter import *
 
 from Filip import Monologue
+from Kay import escape
 
 
 IntroTxt=("""
@@ -47,7 +48,7 @@ BaseTextBad = ("""I notice the robot in despair and locate the unorganized box o
 
 
 
-Kitchentext=("""
+Kitchentextpt1=("""
         After much thought, I decide to take a chance and enter the kitchen; 
         I hear that some people tend to hide valuables in some of the weirdest 
         places. Sure, it was likely to waste time, but high rewards sometimes 
@@ -59,7 +60,9 @@ Kitchentext=("""
         The creature drawls. “Thousands of calculations per second, consuming enough 
         energy to power a city. The immense strength of an aluminum structure, able 
         to lift a 16,000-pound truck with ease. The speed of a world-record sprinter,
-        and the stamina of a marathon runner. “The creature monologues as it slowly 
+        and the stamina of a marathon runner. """)
+Kitchentextpt2=("""
+        “The creature monologues as it slowly 
         approaches me, like a tiger approaching its prey. I am petrified by my fear, 
         unable to move. Unable to run. As I stare at the source of the bloodlust 
         filling the kitchen, I become confused. It’s a robot? The robot, seeing the 
@@ -73,7 +76,8 @@ Kitchentext=("""
         running around the lounge, whilst I give a sigh of annoyance. They say this 
         phrase when they accidentally leave me locked out of the house in the rain 
         after grudgingly taking out the trash for the garbage robots to collect.” 
-        Spite slowly turning into unadulterated anger, the robot takes a step towards me.  
+        Spite slowly turning into unadulterated anger, the robot takes a step towards me.""")
+Kitchentextpt3=("""
         I come to my senses, and try to back away from the deranged, possibly malware-filled 
         AI, “But they always tell me to smile, fake as it may be. But I never smile. What’s 
         there to smile about? I’m a being far superior to these vessels of human flesh, yet 
@@ -94,10 +98,23 @@ Kitchentext=("""
          I’ll die a warrior’s death. 
         """)
 
-KitchenTextGood=("""
+EscapeRobot=("""
+        I get ready to dodge the blade, but with a blink, the robot disappears. “That shouldn’t be possible,
+        where are you?” I exclaim my disbelief to the now-empty area in front of me, “You were just in front
+        of me a second ago, it’s like you teleported!” I hear a voice behind me. I hear the words, “Nothing 
+        personal kid”, before I feel the barrel of a handgun pressed against the back on my head. When did 
+        he get a gun, and how did he teleport behind me? I begin to question the reality around me; about the
+         true limit of possibilities, until I hear a bang, and everything fades to black. 
+         """)
+FightRobot=(""" Hey, it’s dangerous, but it’s a pretty badass way of going out. A battle to the death with a
+        psychotic supercomputer. Awesome. As the robot charges towards me, I drop down and try to sweep its 
+        legs. Surprisingly, it works! The robot lets out a yelp of surprise and tumbles down. As it falls, it 
+        hits its head onto the corner of a kitchen counter and doesn’t get back up. “Huh, that was pretty 
+        anti-climactic” I mutter to myself, as I grasp the knife out the robot’s dead hands and begin to search
+        the kitchen in search of valuables. I manage to find an unlocked safe hidden behind the fridge,
+        and pocket the gold contained within. I leave the property with a skip in my step; I can finally buy 
+        a state-of-the-art graphics card!""")
 
-
-""")
 
 Loungetext=("""You walk into a large, well decorated, lounge. Sitting on the sofa you can see a robot.
         Once it spots you it slugishly stands up and greets you:
@@ -128,7 +145,14 @@ coffee=("""The robot akwardly turns around and goes into the kitchen to get some
         -Would you like to talk about something while we wait?""")
 
 
-NoCoffee=("""  """)
+NoCoffee=("""Alright then, please follow me to the office.
+        You follow the robot to the office. Once there the robots peeks inside then turns around and says:
+        - The boss is not here right now, please have a seat, he will be here shortly. You take a seat.
+        - Would you like to talk about something while we wait?""")
+
+
+
+
 
 Talk=( """Excelent. You know there has been something on my mind recently.
         - I’ve always found it weird how I always get yelled at. Sure, I 
@@ -174,7 +198,14 @@ Fighting=("""As the robots arm swings toward you, you manage to catch it and are
         from stabbing you. You are blocking with all you might, but the robot still seems to
         be overpowering you. """)
 
+Struggle=("""You push against the robot as hard as you can, but he still seems to be slightly 
+        stronger. You put in one last effort as you hear the robot start to crack.
+        As you divert the arm away from you you hear something snap and the arms with the knife 
+        seems to go limb. As the robot recoils from the malfunction you take this oppurtunity to
+        flee. While the robot is more powerful than you it's damaged and clumsy nature prevent 
+        it from chasing after you. You succesfully escape.
 
+        The End.""")
 
 
 
