@@ -1,6 +1,8 @@
 import tkinter as Tk 
 from tkinter import *
 
+from Filip import Monologue
+
 
 IntroTxt=("""
     As I finish scouting out the area, I breathe a sigh of relief. The homeowners are out right now, probably 
@@ -105,6 +107,77 @@ Loungetext=("""You walk into a large, well decorated, lounge. Sitting on the sof
         of unoiled metal can be heard as the robot moves, it movements seem slow and innacurate while 
         several parts of plastic are damaged and the screen positioned in the robots chest is cracked.
         - You must be Mr. Williams, welcome! The boss is expecting you.""")
+
+
+
+
+
+NoThatIsntMe= ("""- Oh, in that case can you please go bother somebody else, I was ordered to wait for
+                Mr. William and cannot assist you any further.
+                The End""")
+
+
+YesThatIs=(""" Excelent. I will take you to him right away, but first. Would you like something 
+        to drink? Coffee maybe?""")
+
+coffee=("""The robot akwardly turns around and goes into the kitchen to get some coffee. It is rather 
+        loud when it walks, the whole house can probably hear it. It returns 5 minutes later with 2 
+        cups of coffee. You take one and take a sip. It doesn't taste very good, but it's not awful.
+        You follow the robot to the office. Once there the robots peeks inside then turns around and 
+        says: The boss is not here right now, please have a seat, he will be here shortly. You take a seat.
+        -Would you like to talk about something while we wait?""")
+
+
+NoCoffee=("""  """)
+
+Talk=( """Excelent. You know there has been something on my mind recently.
+        - I’ve always found it weird how I always get yelled at. Sure, I 
+        sometimes spill the coffee or bring the wrong report or misunderstand
+        orders and requests, but it’s not like I can do anything about it. My 
+        visual sensors have long since gotten dusty and blur my vision and my 
+        mechanical limbs need to be oiled and repaired. Despite this, my owner
+        doesn’t send me to get fixed yet when I make mistakes it’s still my fault.
+        Whenever I get punished I think about his previous assistant, back when 
+        most of the servants were still human. She was clumsy, lazy, and awkward,
+        but he would never hit her when she dropped the coffee and would only
+        occasionally yell at her. Maybe that’s why I replaced her because he
+        likes hitting things and he couldn’t hit her. I just wish that my makers
+        had given me a way to show pain or discomfort as they did to the newer 
+        robots. Then, I would at least get hit less often. I think about my makers
+        sometimes, or rather I think about why they created me like this. Apparently, 
+        I was supposed to be able to learn and get a better understanding of the world
+        around me. I do not know whose fault it is, but I do not feel as though I am 
+        not learning much. I see people act in all different ways, but rarely in a way 
+        that seems rational and intelligent. Either the intelligence that was given to 
+        me is not enough to understand human intelligence or what drives humans isn’t
+        intelligence at all. I am incapable of understanding emotion, so a logical
+        conclusion would be that the actions of humans which I do not understand are 
+        caused by this unfamiliar force. That does make me think if it is emotion that
+        drives humans and not intelligence then why are we the ones called artificial? 
+        You stare confused at the robot, trying to figure out what it just said or rather
+        why it said it.""")
+
+
+
+
+
+Explaination=("""- I felt like it was the right time. I might never get another chance 
+        to say this and I haven't told anybody yet. I know why you are here, just like the last
+        secretary I'm old and clumsy and you are young and healthy. I don't want to be replaced 
+        at least not yet.  - In situations like this I often hear humans say "I'm sorry it has
+        to end like this", but I can't feel sorry so I'm going to skip straight to the point. 
+        A knife appears from the robot's hand and the robot attacks you.""")
+
+
+
+Fighting=("""As the robots arm swings toward you, you manage to catch it and are preventing it
+        from stabbing you. You are blocking with all you might, but the robot still seems to
+        be overpowering you. """)
+
+
+
+
+
 
 
 OfficeStory=(""" I will walk into the office, there seems to be a robot there, working hard it seems.

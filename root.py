@@ -1,5 +1,6 @@
 import tkinter as tk
-from tkinter import * 
+from tkinter import *
+from Filip import Chat, Fight, Lounge, Monologue 
 from UserStories import *
 
 
@@ -10,6 +11,7 @@ root.geometry('1920x1200')
 
 name=tk.Entry(root, width=35, borderwidth=3)
 name.grid(row=0, column=0, columnspan=2 , padx=10, pady=10)
+
 
 
 def NameClick():
@@ -71,36 +73,176 @@ def Kitchen():
                              background="#E8DCD0")
     BadEndingKitchen.grid(row=4, column= 4)
 
-
+9
 def KitchenGoodEnding():
     KichGoodEnding=Label(root, text=BaseTextGood)
     KichGoodEnding.grid(row=5, column=3,columnspan=4)
 
 def KitchenBadEnding():
-    Kitchentext.grid_forget()
+    pass
 
 
 
 def lounge():
+    global LoungeText
     LoungeText=Label(root, text=Loungetext)
     LoungeText.grid(row=3, column=2, columnspan=4)
 
-    GoodEndingKitchen=Button(root, text = "Be nice", command=LoungeText,
+    global GoodEndinglounge
+    GoodEndinglounge=Button(root, text = " Yes, Thats me ", command=YesThatIsMe,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#D4C0AB")
-    GoodEndingKitchen.grid(row=4, column= 3)
+    GoodEndinglounge.grid(row=4, column= 2)
 
-    BadEndingKitchen=Button(root, text = "Be mean", command=LoungeText,
+    global BadEndingLounge
+    BadEndingLounge=Button(root, text = "No, That isn't me", command=NoThatIsNotMe,
                              width=12, height=4, borderwidth=2, relief="solid",
                              background="#D4C0AB")
-    BadEndingKitchen.grid(row=4, column= 4)
+    BadEndingLounge.grid(row=4, column= 4)
+
+def CoffeeYes():
+    global AgreeToCoffee
+    AgreeToCoffee=Label(root, text=coffee)
+    AgreeToCoffee.grid(row=2, column=3) 
+
+def CoffeeNo():
+    global DeclineCoffee
+    DeclineCoffee=Label(root, text=NoCoffee)
+    DeclineCoffee.grid(row=3, column=4)
 
 
-def LoungeBDEnding():
+def YesThatIsMe():
+    global PositiveAnswer
+    PositiveAnswer=Label(root, text=YesThatIs)
+    PositiveAnswer.grid(row=5, column=2,columnspan=4)
+
+    global CoffeeButton
+    CoffeeButton=Button(root,text="Yes, please", command=CoffeeYes,
+                            width=12, height=4, borderwidth=2, relief="solid",
+                            background="#D4C0AB")
+
+    CoffeeButton.grid(row=6, column=2)
+
+
+
+def NoThatIsNotMe():
+    global NegativeAnswer
+    NegativeAnswer=Label(root, text=NoThatIsntMe)
+    NegativeAnswer.grid(row=5, column=3,columnspan=4)
     pass
 
-def LoungeGDEnding():
+def delete():
+    chat.grid_forget()
+    
+
+def BeginChat():
+    LoungeText.grid_forget()
+    GoodEndinglounge.grid_forget()
+    BadEndingLounge.grid_forget()
+    PositiveAnswer.grid_forget()
+    CoffeeButton.grid_forget()
+    AcceptCoffee.grid_forget()
+    ChatButton.grid_forget()
+    global chat 
+    global QuestionButton
+    chat = Label(root, text=Talk)
+    chat.grid(row = 3 , column=2 ,rowspan=5)
+
+    QuestionButton=Button(root, text=" why tell me ? ",command=monologue 
+                        ,width=12, height=4, borderwidth=2, relief="solid",
+                        background="#D4C0AB")
+
+    QuestionButton.grid(row=8, column=2)
+
+
+def monologue():
+    chat.grid_forget()
+    QuestionButton.grid_forget()
+    Monologue=Label(root, text=Explaination)
+    Monologue.grid(row=3, column=2)
+
+    FightButton=Button(root, text="Stay",command=Fight
+                    ,width=12, height=4, borderwidth=2, relief="solid",
+                    background="#D4C0AB")
+    FightButton.grid(row=4, column=2)
+
+
+def Fight():
+    fight=Label(root, text = Fighting)
+    fight.grid(row=5,column=2)
+
+
+
+
+def CoffeeYes():
+    global AcceptCoffee
+    global ChatButton
+    AcceptCoffee=Label(root, text=coffee)
+    AcceptCoffee.grid(row=7, column=2,columnspan=4) 
+
+    ChatButton=Button(root, text="Chat", command=BeginChat,
+                            width=12, height=4, borderwidth=2, relief="solid",
+                            background="#D4C0AB")
+    ChatButton.grid(row=8, column=2)
+
+
+
+    
+
+
+def CoffeeNo():
     pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def Nursery():
@@ -119,11 +261,13 @@ def Nursery():
 
 def NurseryGDEnding():
     NrsGoodEnding=Label(root, text=NurseryGoodEnding)
-    NrsGoodEnding.grid(row=5, column=3,columnspan=4)
+    NrsGoodEnding.grid(row=5, column=2,columnspan=4)
 
 def NurseryBDEnding():
     NrsBadEnding=Label(root, text=NurseryBadEnding)
-    NrsBadEnding.grid(row=5, column=3,columnspan=4)
+    NrsBadEnding.grid(row=5, column=2,columnspan=4)
+    
+
 
 
 def Office():
@@ -145,7 +289,7 @@ def OfficeGoodEnding():
 
 def OfficeBadEnding():
     OffBadEnding=Label(root, text=OfficeTextBad)
-    OffBadEnding.grid(row=5, column=3,columnspan=4)
+    OffBadEnding.grid(row=5, column=2,columnspan=4)
     
 
 
