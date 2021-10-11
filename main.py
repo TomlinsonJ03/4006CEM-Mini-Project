@@ -1,7 +1,6 @@
 from tkinter import *
 from app import App
 from options import options
-from root import *
 from UserStories import *
 
 def main():

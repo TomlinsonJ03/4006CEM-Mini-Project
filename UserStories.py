@@ -1,9 +1,6 @@
 import tkinter as Tk 
 from tkinter import *
 
-from Filip import Monologue
-from Kay import escape
-
 
 IntroTxt=("""
     As I finish scouting out the area, I breathe a sigh of relief. The homeowners are out right now, probably 
